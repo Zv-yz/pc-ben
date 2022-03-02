@@ -7,11 +7,9 @@ const { BOT_AVATARS } = getModule(['BOT_AVATARS'], false)
 let Ben_Started = false
 BOT_AVATARS.ben = 'https://cdn.discordapp.com/attachments/733868998781042748/948495696057757736/16150353603466.png'
 function PlayAudio(Name){
-	return new Promise(res => {
-		let NEW_Audio = new Audio(`https://raw.githubusercontent.com/Zv-yz/pc-ben/main/Audios/${Name}.wav`)
-		NEW_Audio.volume = 1
-		NEW_Audio.play()
-	})
+	let NEW_Audio = new Audio(`https://raw.githubusercontent.com/Zv-yz/pc-ben/main/Audios/${Name}.wav`)
+	NEW_Audio.volume = 1
+	NEW_Audio.play()
 }
 module.exports = class BenPowercord extends Plugin {
 	startPlugin() {
