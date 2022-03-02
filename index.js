@@ -41,7 +41,7 @@ module.exports = class BenPowercord extends Plugin {
 		receivedMessage.author.avatar = 'ben'
 		Ben_Started = !Ben_Started
 		if (Ben_Started == true) {
-			await PlayAudio('Ben')
+			PlayAudio('Ben')
 			receivedMessage.content = 'Ben.'
 		} else {
 			receivedMessage.content = 'Stopped.'
@@ -68,19 +68,19 @@ module.exports = class BenPowercord extends Plugin {
 		
 		switch (RandomAnswer[Math.floor(RandomAnswer.length * Math.random())]){
 			case 'Augg':
-				await PlayAudio('Augg')
+				PlayAudio('Augg')
 				receivedMessage.content = `> Question: **${args.join(' ')}**\n\nAuggh.`
 				break
 			case 'Hohoho':
-				await PlayAudio('Hohoho')
+				PlayAudio('Hohoho')
 				receivedMessage.content = `> Question: **${args.join(' ')}**\n\nHO HO HO.`
 				break
 			case 'No':
-				await PlayAudio('No')
+				PlayAudio('No')
 				receivedMessage.content = `> Question: **${args.join(' ')}**\n\nNo.`
 				break
 			case 'Yes':
-				await PlayAudio('Yes')
+				PlayAudio('Yes')
 				receivedMessage.content = `> Question: **${args.join(' ')}**\n\nYes.`
 				break
 		}
