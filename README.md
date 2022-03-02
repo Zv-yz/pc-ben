@@ -13,6 +13,6 @@ Ask question, then he gonna respond your question.
 
 # **Changelog**
 * 1.0.1:
-        * Fixed bugs.
+	* Fixed bug.
 * 1.0.0:
 	* First version. :D
